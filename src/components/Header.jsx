@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { User, Mail, Lock, X, Menu, ChevronDown, LogOut, ShoppingCart, Home, Info, Settings, Star, Phone, Contact } from "lucide-react";
-import { MdAdminPanelSettings } from "react-icons/md";
-import { FaUserCircle } from "react-icons/fa";
+import { Plug } from "lucide-react";
 import { useCart } from '../contexts/CartContext';
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
@@ -210,8 +209,8 @@ const Header = () => {
                 className={`px-3 py-2 text-sm font-medium transition-all duration-300 relative group flex items-center gap-1 ${isActive('/amblinks') ? 'text-white' : 'text-gray-300 hover:text-white'
                   }`}
               >
-                <Settings size={16} className="group-hover:text-red-500 transition-colors" />
-                <span>Amplink</span>
+                <Plug size={16} className="group-hover:text-red-500 transition-colors" />
+                <span>EV Charger</span>
 
                 <span
                   className={`absolute -bottom-1 left-0 right-0 h-0.5 bg-red-600 transform origin-left transition-transform duration-300 ${isActive('/amblinks') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
@@ -403,8 +402,8 @@ const Header = () => {
                 className={`px-3 py-2 text-sm font-medium transition-all duration-300 relative group flex items-center gap-1 ${isActive('/amblinks') ? 'text-white' : 'text-gray-300 hover:text-white'
                   }`}
               >
-                <Settings size={16} className="group-hover:text-red-500 transition-colors" />
-                <span>Amplink</span>
+                <Plug size={16} className="group-hover:text-red-500 transition-colors" />
+                <span>EV Charger</span>
 
                 <span
                   className={`absolute -bottom-1 left-0 right-0 h-0.5 bg-red-600 transform origin-left transition-transform duration-300 ${isActive('/amblinks') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'

@@ -6,7 +6,7 @@ const Amplink = () => {
     {
       id: 1,
       name: "AmpLink Elite",
-      subtitle: "7.4 KW Socket EV Charger",
+      subtitle: "Supports 7.4 kW (single-phase), 11 kW & 22 kW (three-phase) charging options",
       basePrice: "Starting At Just £475.00",
       images: [
         "/assets/1Layer.png",
@@ -125,7 +125,7 @@ const Amplink = () => {
               <div className="flex gap-3">
                 <a
                   href="mailto:syntradltd@email.com?subject=Product Enquiry"
-                  className="bg-red-700 text-white font-bold px-4 py-2 rounded-lg shadow hover:opacity-95 inline-block"
+                  className="bg-red-700 text-white fonts-bold px-4 py-2 rounded-lg shadow hover:opacity-95 inline-block"
                 >
                   Enquire Now
                 </a>
@@ -171,111 +171,111 @@ const Amplink = () => {
         </div>
 
         <div className="w-full bg-white text-black">
-      {/* SECTION 1 — INTRO */}
-      <section className="py-16 px-6 md:px-20">
-        <h2 className="text-3xl md:text-4xl font-bold tracking-wide text-red-600">
-          AmpLink Elite X
-        </h2>
-        <p className="mt-4 text-lg leading-relaxed text-gray-700 max-w-3xl">
-          At Syntrad, we believe in building a cleaner, smarter future with every charge.
-          Our passion for innovation and quality engineering is reflected in every 
-          product we create. The AmpLink Elite X is our latest leap in user-focused 
-          EV charging designed to empower your journey.
-        </p>
-      </section>
-
-      {/* Divider */}
-      <div className="w-full h-[1px] bg-gray-200" />
-
-      {/* SECTION 2 — FEATURES & BENEFITS */}
-      <section className="py-14 px-6 md:px-20 bg-gray-50">
-        <h2 className="text-3xl md:text-4xl font-bold text-center tracking-wide">
-          Features & Benefits
-        </h2>
-
-        {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mt-12">
-          {/* Card 1 */}
-          <div className="p-7 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all border border-gray-100">
-            <Smartphone className="w-10 h-10 text-red-600" />
-            <h3 className="text-xl font-semibold mt-3">App Control</h3>
-            <p className="text-gray-600 mt-2">
-              Monitor, schedule, and manage charging anytime from any device.
+          {/* SECTION 1 — INTRO */}
+          <section className="py-16 px-6 md:px-20">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-wide text-red-600">
+              AmpLink Elite X
+            </h2>
+            <p className="mt-4 text-lg leading-relaxed text-gray-700 max-w-3xl">
+              At Syntrad, we believe in building a cleaner, smarter future with every charge.
+              Our passion for innovation and quality engineering is reflected in every
+              product we create. The AmpLink Elite X is our latest leap in user-focused
+              EV charging designed to empower your journey.
             </p>
-          </div>
+          </section>
 
-          {/* Card 2 */}
-          <div className="p-7 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all border border-gray-100">
-            <Zap className="w-10 h-10 text-red-600" />
-            <h3 className="text-xl font-semibold mt-3">High-Speed Charging</h3>
-            <p className="text-gray-600 mt-2">
-              Reliable, fast power delivery with advanced power optimization.
-            </p>
-          </div>
+          {/* Divider */}
+          <div className="w-full h-[1px] bg-gray-200" />
 
-          {/* Card 3 */}
-          <div className="p-7 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all border border-gray-100">
-            <ShieldCheck className="w-10 h-10 text-red-600" />
-            <h3 className="text-xl font-semibold mt-3">Advanced Safety</h3>
-            <p className="text-gray-600 mt-2">
-              Multi-layered protection and secure smart-grid capability.
-            </p>
-          </div>
+          {/* SECTION 2 — FEATURES & BENEFITS */}
+          <section className="py-14 px-6 md:px-20 bg-gray-50">
+            <h2 className="text-3xl md:text-4xl font-bold text-center tracking-wide">
+              Features & Benefits
+            </h2>
+
+            {/* Cards */}
+            <div className="grid md:grid-cols-3 gap-8 mt-12">
+              {/* Card 1 */}
+              <div className="p-7 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all border border-gray-100">
+                <Smartphone className="w-10 h-10 text-red-600" />
+                <h3 className="text-xl font-semibold mt-3">App Control</h3>
+                <p className="text-gray-600 mt-2">
+                  Monitor, schedule, and manage charging anytime from any device.
+                </p>
+              </div>
+
+              {/* Card 2 */}
+              <div className="p-7 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all border border-gray-100">
+                <Zap className="w-10 h-10 text-red-600" />
+                <h3 className="text-xl font-semibold mt-3">High-Speed Charging</h3>
+                <p className="text-gray-600 mt-2">
+                  Reliable, fast power delivery with advanced power optimization.
+                </p>
+              </div>
+
+              {/* Card 3 */}
+              <div className="p-7 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all border border-gray-100">
+                <ShieldCheck className="w-10 h-10 text-red-600" />
+                <h3 className="text-xl font-semibold mt-3">Advanced Safety</h3>
+                <p className="text-gray-600 mt-2">
+                  Multi-layered protection and secure smart-grid capability.
+                </p>
+              </div>
+            </div>
+
+            {/* UTILITY FEATURES */}
+            <div className="mt-16 p-10 bg-white rounded-2xl shadow-md border border-gray-100">
+              <h3 className="text-2xl font-bold text-gray-900">Automatic Utility Communication</h3>
+
+              <ul className="mt-4 space-y-3 text-gray-700">
+                <li>
+                  <strong className="text-red-600">Demand Response:</strong>
+                  EV charging adapts during peak grid demand to reduce energy load.
+                </li>
+                <li>
+                  <strong className="text-red-600">Dynamic Tariffs:</strong>
+                  Automatically charges during low-price hours to maximise savings.
+                </li>
+                <li>
+                  <strong className="text-red-600">Green Energy Integration:</strong>
+                  Automatically prioritises renewable grid energy.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          {/* SECTION 3 — SOLAR COMPATIBLE */}
+          <section className="py-16 px-6 md:px-20 bg-white">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-wide text-center">
+              Greener Than Ever — <span className="text-red-600">PV Compatible</span>
+            </h2>
+
+            <div className="mt-10 grid md:grid-cols-2 gap-10 items-center">
+              {/* Left text */}
+              <div>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Connect the Syntrad AmpLink Elite X to your solar PV system and charge
+                  using the power of the sun! The charger automatically uses surplus
+                  solar energy whenever available with no manual switching required.
+                </p>
+
+                <h3 className="text-xl font-bold mt-6">Smart Solar Integration</h3>
+
+                <p className="text-gray-700 mt-2 leading-relaxed">
+                  The Syntrad App intelligently detects when your home’s solar PV is
+                  generating excess power and routes it directly to your EV helping you
+                  charge greener and save more automatically. Track solar charging inside
+                  your app dashboard.
+                </p>
+              </div>
+
+              {/* Right panel */}
+              <div className="flex justify-center">
+                <Leaf className="w-40 h-40 text-green-600 opacity-80" />
+              </div>
+            </div>
+          </section>
         </div>
-
-        {/* UTILITY FEATURES */}
-        <div className="mt-16 p-10 bg-white rounded-2xl shadow-md border border-gray-100">
-          <h3 className="text-2xl font-bold text-gray-900">Automatic Utility Communication</h3>
-
-          <ul className="mt-4 space-y-3 text-gray-700">
-            <li>
-              <strong className="text-red-600">Demand Response:</strong>  
-               EV charging adapts during peak grid demand to reduce energy load.
-            </li>
-            <li>
-              <strong className="text-red-600">Dynamic Tariffs:</strong>  
-               Automatically charges during low-price hours to maximise savings.
-            </li>
-            <li>
-              <strong className="text-red-600">Green Energy Integration:</strong>  
-               Automatically prioritises renewable grid energy.
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      {/* SECTION 3 — SOLAR COMPATIBLE */}
-      <section className="py-16 px-6 md:px-20 bg-white">
-        <h2 className="text-3xl md:text-4xl font-bold tracking-wide text-center">
-          Greener Than Ever — <span className="text-red-600">PV Compatible</span>
-        </h2>
-
-        <div className="mt-10 grid md:grid-cols-2 gap-10 items-center">
-          {/* Left text */}
-          <div>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Connect the Syntrad AmpLink Elite X to your solar PV system and charge 
-              using the power of the sun! The charger automatically uses surplus 
-              solar energy whenever available with no manual switching required.
-            </p>
-
-            <h3 className="text-xl font-bold mt-6">Smart Solar Integration</h3>
-
-            <p className="text-gray-700 mt-2 leading-relaxed">
-              The Syntrad App intelligently detects when your home’s solar PV is 
-              generating excess power and routes it directly to your EV helping you 
-              charge greener and save more automatically. Track solar charging inside 
-              your app dashboard.
-            </p>
-          </div>
-
-          {/* Right panel */}
-          <div className="flex justify-center">
-            <Leaf className="w-40 h-40 text-green-600 opacity-80" />
-          </div>
-        </div>
-      </section>
-    </div>
 
         {/* Price Table */}
         <table className="w-full mt-20 table-auto border-collapse">
@@ -434,12 +434,59 @@ const Amplink = () => {
         {/* CTA */}
         <div className="mt-8 flex items-center justify-center">
           <a
-                  href="mailto:syntradltd@email.com?subject=Product Enquiry"
-                  className="bg-red-700 hover:bg-red-800 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:opacity-95 inline-block"
-                >
-                   Book your install
-                </a>
+            href="mailto:syntradltd@email.com?subject=Product Enquiry"
+            className="bg-red-700 hover:bg-red-800 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:opacity-95 inline-block"
+          >
+            Book your install
+          </a>
         </div>
+
+        {/* Logo Section */}
+        <section className="mt-16 py-12 bg-gray-50 rounded-2xl shadow-inner">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800">
+            Trusted. Certified. Globally Manufactured.
+          </h2>
+
+          <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center px-6">
+
+            {/* OZEV Installer Logo */}
+            <div className="flex justify-center">
+              <img
+                src="/assets/zero.png"
+                alt="OZEV Approved Installer"
+                className="h-20 object-contain"
+              />
+            </div>
+
+            {/* Octopus Energy Logo */}
+            <div className="flex justify-center">
+              <img
+                src="/assets/octopus.png"
+                alt="Octopus Energy"
+                className="h-20 object-contain"
+              />
+            </div>
+
+            {/* Made in Turkey Logo */}
+            <div className="flex justify-center">
+              <img
+                src="/assets/turkey.png"
+                alt="Made in Turkey"
+                className="h-16 object-contain"
+              />
+            </div>
+
+            {/* Designed & Manufactured in UK Logo */}
+            <div className="flex justify-center">
+              <img
+                src="/assets/unnamed.png"
+                alt="Designed & Manufactured in the UK"
+                className="h-20 object-contain"
+              />
+            </div>
+          </div>
+        </section>
+
       </div>
     </div>
   );

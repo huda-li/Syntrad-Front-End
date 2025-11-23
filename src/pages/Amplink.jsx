@@ -10,12 +10,12 @@ const Amplink = () => {
       subtitle: "Supports 7.4 kW (single-phase), 11 kW & 22 kW (three-phase) charging options",
       basePrice: "Starting At Just £475.00",
       images: [
-        "/assets/1Layer.png",
-        "/assets/4Layer.png",
-        "/assets/5Layer.png",
-        "/assets/3Layer.png",
-        "/assets/2Layer.png",
-        "/assets/6Layer.png",
+        "src/assets/1Layer.png",
+        "src/assets/4Layer.png",
+        "src/assets/5Layer.png",
+        "src/assets/3Layer.png",
+        "src/assets/2Layer.png",
+        "src/assets/6Layer.png",
       ],
       colors: [
         { id: "white", label: "Crimson", class: "bg-white-600", imageIndex: 0 },
@@ -431,45 +431,51 @@ const Amplink = () => {
         </table>
 
         {/* Metered EV Charging Section */}
-        <section className="mt-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+<section className="mt-20">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
-            {/* Text Content */}
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Metered EV Charging – Card & App Payments Enabled
-              </h2>
+    {/* Text Content */}
+    <div>
+      <h2 className="text-3xl font-bold text-gray-900 mb-5">
+        Metered EV Charging – Card & App Payments Enabled
+      </h2>
 
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Offer your customers a seamless charging experience with our metered EV
-                charger options, fully compatible with debit/credit card payments or
-                mobile app billing. Ideal for residential blocks, commercial sites,
-                rental properties and workplaces, these chargers provide accurate energy
-                metering, transparent pricing, and automated revenue collection.
-              </p>
+      <p className="text-gray-700 leading-relaxed mb-4">
+        Offer your customers a seamless charging experience with our metered EV
+        charger options, fully compatible with debit/credit card payments or
+        mobile app billing. Ideal for residential blocks, commercial sites,
+        rental properties and workplaces, these chargers provide accurate energy
+        metering, transparent pricing, and automated revenue collection.
+      </p>
 
-              <p className="text-gray-700 leading-relaxed">
-                Whether you manage a single property or an entire fleet of chargers,
-                our payment-enabled systems ensure secure transactions, usage reports,
-                and plug-and-charge convenience for all drivers.
-              </p>
-            </div>
+      <p className="text-gray-700 leading-relaxed">
+        Whether you manage a single property or an entire fleet of chargers,
+        our payment-enabled systems ensure secure transactions, usage reports,
+        and plug-and-charge convenience for all drivers.
+      </p>
+    </div>
 
-            {/* Image */}
-            <div className="flex justify-center md:justify-end">
-              <img
-                src="/assets/car.jpeg"
-                alt="EV charging station"
-                className="rounded-xl shadow-lg w-full md:max-w-md object-cover"
-              />
-            </div>
+    {/* Image + Heading */}
+    <div className="flex flex-col items-center md:items-end text-center md:text-right">
+      <p className="text-xl font-semibold text-gray-900 mb-3">
+        Smart metering for your customer
+      </p>
+      <p className="text-xl font-semibold text-gray-900 mb-3">Get paid to charge</p>
 
-          </div>
-        </section>
+      <img
+        src="/assets/car.jpeg"
+        alt="EV charging station"
+        className="rounded-xl shadow-lg w-full md:max-w-md object-cover"
+      />
+    </div>
+
+  </div>
+</section>
+
 
 
         {/* CTA */}
-        <div className="mt-20 flex items-center justify-center">
+        <div className="mt-18 flex items-center justify-center">
           <Link to="/contact"
             className="bg-red-700 hover:bg-red-800 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:opacity-95 inline-block"
           >

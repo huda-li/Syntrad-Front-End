@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Sun, ShieldCheck, Zap, Smartphone, Leaf, Factory } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 const Amplink = () => {
   const products = [
@@ -123,12 +124,11 @@ const Amplink = () => {
               </div>
 
               <div className="flex gap-3">
-                <a
-                  href="mailto:syntradltd@email.com?subject=Product Enquiry"
+                <Link to="/contact"
                   className="bg-red-700 text-white fonts-bold px-4 py-2 rounded-lg shadow hover:opacity-95 inline-block"
                 >
                   Enquire Now
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -278,7 +278,7 @@ const Amplink = () => {
         </div>
 
         {/* Price Table */}
-        <table className="w-full mt-20 table-auto border-collapse">
+        <table className="w-full mt-32 table-auto border-collapse">
           <thead>
             <tr className="bg-gray-50">
               <th className="text-left p-3">Category</th>
@@ -430,21 +430,57 @@ const Amplink = () => {
           </tbody>
         </table>
 
+        {/* Metered EV Charging Section */}
+        <section className="mt-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+            {/* Text Content */}
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Metered EV Charging – Card & App Payments Enabled
+              </h2>
+
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Offer your customers a seamless charging experience with our metered EV
+                charger options, fully compatible with debit/credit card payments or
+                mobile app billing. Ideal for residential blocks, commercial sites,
+                rental properties and workplaces, these chargers provide accurate energy
+                metering, transparent pricing, and automated revenue collection.
+              </p>
+
+              <p className="text-gray-700 leading-relaxed">
+                Whether you manage a single property or an entire fleet of chargers,
+                our payment-enabled systems ensure secure transactions, usage reports,
+                and plug-and-charge convenience for all drivers.
+              </p>
+            </div>
+
+            {/* Image */}
+            <div className="flex justify-center md:justify-end">
+              <img
+                src="/assets/car.jpeg"
+                alt="EV charging station"
+                className="rounded-xl shadow-lg w-full md:max-w-md object-cover"
+              />
+            </div>
+
+          </div>
+        </section>
+
 
         {/* CTA */}
-        <div className="mt-8 flex items-center justify-center">
-          <a
-            href="mailto:syntradltd@email.com?subject=Product Enquiry"
+        <div className="mt-20 flex items-center justify-center">
+          <Link to="/contact"
             className="bg-red-700 hover:bg-red-800 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:opacity-95 inline-block"
           >
             Book your install
-          </a>
+          </Link>
         </div>
 
         {/* Logo Section */}
         <section className="mt-16 py-12 bg-gray-50 rounded-2xl shadow-inner">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800">
-            Trusted. Certified. Globally Manufactured.
+            Trusted, Certified, Globally Manufactured.
           </h2>
 
           <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center px-6">
@@ -467,6 +503,15 @@ const Amplink = () => {
               />
             </div>
 
+            {/* Designed & Manufactured in UK Logo */}
+            <div className="flex justify-center">
+              <img
+                src="/assets/unnamed.png"
+                alt="Designed & Manufactured in the UK"
+                className="h-20 object-contain"
+              />
+            </div>
+
             {/* Made in Turkey Logo */}
             <div className="flex justify-center">
               <img
@@ -476,14 +521,6 @@ const Amplink = () => {
               />
             </div>
 
-            {/* Designed & Manufactured in UK Logo */}
-            <div className="flex justify-center">
-              <img
-                src="/assets/unnamed.png"
-                alt="Designed & Manufactured in the UK"
-                className="h-20 object-contain"
-              />
-            </div>
           </div>
         </section>
 

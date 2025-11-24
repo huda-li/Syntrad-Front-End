@@ -10,12 +10,12 @@ const Amplink = () => {
       subtitle: "Supports 7.4 kW (single-phase), 11 kW & 22 kW (three-phase) charging options",
       basePrice: "Starting At Just £475.00",
       images: [
-        "src/assets/1Layer.png",
-        "src/assets/4Layer.png",
-        "src/assets/5Layer.png",
-        "src/assets/3Layer.png",
-        "src/assets/2Layer.png",
-        "src/assets/6Layer.png",
+        "assets/1Layer.png",
+        "assets/4Layer.png",
+        "assets/5Layer.png",
+        "assets/3Layer.png",
+        "assets/2Layer.png",
+        "assets/6Layer.png",
       ],
       colors: [
         { id: "white", label: "Crimson", class: "bg-white-600", imageIndex: 0 },
@@ -77,7 +77,7 @@ const Amplink = () => {
                       setActiveImage(c.imageIndex);
                     }}
                     aria-label={`Select ${c.label}`}
-                    className={`w-10 h-10 rounded-full ring-2 ring-offset-1 ring-gray-200 flex items-center justify-center ${activeColor === c.id ? "ring-4 ring-offset-2" : ""
+                    className={`w-8 h-8 md:w-10 md:h-10 rounded-full ring-2 ring-offset-1 ring-gray-200 flex items-center justify-center ${activeColor === c.id ? "ring-4 ring-offset-2" : ""
                       }`}
                   >
                     <span className={`${c.class} w-8 h-8 block rounded-full`} />
@@ -86,7 +86,7 @@ const Amplink = () => {
               </div>
 
               {/* Image thumbnails */}
-              <div className="mt-4 flex gap-3">
+              <div className="mt-4 flex gap-3 flex-wrap justify-center">
                 {product.images.map((img, i) => (
                   <button
                     key={i}
@@ -146,7 +146,7 @@ const Amplink = () => {
             </div>
 
             {/* Tech section */}
-            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="w-full h-auto max-h-48 bg-gray-100 rounded-lg flex items-center justify-center overflow-hidden">
               <div>
                 <h4 className="font-medium">Technical features</h4>
                 <ul className="mt-2 list-disc list-outside pl-5 text-sm text-gray-700 space-y-1">
@@ -271,13 +271,14 @@ const Amplink = () => {
 
               {/* Right panel */}
               <div className="flex justify-center">
-                <Leaf className="w-40 h-40 text-green-600 opacity-80" />
+                <Leaf className="w-28 h-28 md:w-40 md:h-40 text-green-600 opacity-80" />
               </div>
             </div>
           </section>
         </div>
 
         {/* Price Table */}
+        <div className="overflow-x-auto">
         <table className="w-full mt-32 table-auto border-collapse">
           <thead>
             <tr className="bg-gray-50">
@@ -429,7 +430,7 @@ const Amplink = () => {
 
           </tbody>
         </table>
-
+</div>
         {/* Metered EV Charging Section */}
 <section className="mt-20">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -460,17 +461,22 @@ const Amplink = () => {
       <p className="text-xl font-semibold text-gray-900 mb-3">
         Smart metering for your customer
       </p>
-      <p className="text-xl font-semibold text-gray-900 mb-3">Get paid to charge</p>
+      <p className="text-xl font-semibold text-gray-900 mb-3">
+        Get paid to charge
+      </p>
 
-      <img
-        src="/assets/car.jpeg"
-        alt="EV charging station"
-        className="rounded-xl shadow-lg w-full md:max-w-md object-cover"
-      />
+      <div className="rounded-xl shadow-lg w-full md:max-w-md overflow-hidden">
+        <img
+          src="/assets/car.jpeg"
+          alt="EV charging station"
+          className="w-full h-full object-cover"
+        />
+      </div>
     </div>
 
   </div>
 </section>
+
 
 
 
@@ -496,7 +502,8 @@ const Amplink = () => {
               <img
                 src="/assets/zero.png"
                 alt="OZEV Approved Installer"
-                className="h-20 object-contain"
+                className="h-14 md:h-20  object-contain"
+
               />
             </div>
 
@@ -505,7 +512,7 @@ const Amplink = () => {
               <img
                 src="/assets/octopus.png"
                 alt="Octopus Energy"
-                className="h-20 object-contain"
+                className="h-14 md:h-20  object-contain"
               />
             </div>
 
@@ -514,7 +521,7 @@ const Amplink = () => {
               <img
                 src="/assets/unnamed.png"
                 alt="Designed & Manufactured in the UK"
-                className="h-20 object-contain"
+                className="h-14 md:h-20  object-contain"
               />
             </div>
 
@@ -523,7 +530,7 @@ const Amplink = () => {
               <img
                 src="/assets/turkey.png"
                 alt="Made in Turkey"
-                className="h-16 object-contain"
+                className="h-14 md:h-20  object-contain"
               />
             </div>
 

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Sun, ShieldCheck, Zap, Smartphone, Leaf, Factory } from "lucide-react";
 import { Link } from 'react-router-dom';
+import RequestQuote from "../components/RequestQuote";
 
 const Amplink = () => {
   const products = [
@@ -45,9 +46,10 @@ const Amplink = () => {
   const product = products[0];
   const [activeColor, setActiveColor] = useState(product.colors[0].id);
   const [activeImage, setActiveImage] = useState(0);
+  const [isQuoteOpen, setIsQuoteOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 p-6 md:p-12">
+    <div className="min-h-screen bg-white text-gray-900 p-4 md:p-12">
       <div className="max-w-6xl mx-auto">
         {/* Header / hero */}
         <div className="flex flex-col md:flex-row items-start gap-8">
@@ -110,7 +112,7 @@ const Amplink = () => {
 
           {/* Right Section – Info */}
           <div className="w-full md:w-1/2">
-            <h1 className="text-3xl font-extrabold tracking-tight text-red-700">
+            <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight text-red-700">
               {product.name}
             </h1>
             <p className="mt-2 text-sm text-gray-600">{product.subtitle}</p>
@@ -124,11 +126,12 @@ const Amplink = () => {
               </div>
 
               <div className="flex gap-3">
-                <Link to="/contact"
-                  className="bg-red-700 text-white fonts-bold px-4 py-2 rounded-lg shadow hover:opacity-95 inline-block"
+                <button 
+                  onClick={() => setIsQuoteOpen(true)}
+                  className="bg-red-700 text-white fonts-bold px-4 py-2 rounded-lg shadow hover:opacity-95 inline-block w-full md:w-auto"
                 >
                   Enquire Now
-                </Link>
+                </button>
               </div>
             </div>
 
@@ -172,7 +175,7 @@ const Amplink = () => {
 
         <div className="w-full bg-white text-black">
           {/* SECTION 1 — INTRO */}
-          <section className="py-16 px-6 md:px-20">
+          <section className="py-10 md:py-16 px-4 md:px-20">
             <h2 className="text-3xl md:text-4xl font-bold tracking-wide text-red-600">
               AmpLink Elite X
             </h2>
@@ -188,7 +191,7 @@ const Amplink = () => {
           <div className="w-full h-[1px] bg-gray-200" />
 
           {/* SECTION 2 — FEATURES & BENEFITS */}
-          <section className="py-14 px-6 md:px-20 bg-gray-50">
+          <section className="py-10 md:py-14 px-4 md:px-20 bg-gray-50">
             <h2 className="text-3xl md:text-4xl font-bold text-center tracking-wide">
               Features & Benefits
             </h2>
@@ -245,7 +248,7 @@ const Amplink = () => {
           </section>
 
           {/* SECTION 3 — SOLAR COMPATIBLE */}
-          <section className="py-16 px-6 md:px-20 bg-white">
+          <section className="py-10 md:py-16 px-4 md:px-20 bg-white">
             <h2 className="text-3xl md:text-4xl font-bold tracking-wide text-center">
               Greener Than Ever — <span className="text-red-600">PV Compatible</span>
             </h2>
@@ -482,11 +485,12 @@ const Amplink = () => {
 
         {/* CTA */}
         <div className="mt-18 flex items-center justify-center">
-          <Link to="/contact"
-            className="bg-red-700 hover:bg-red-800 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:opacity-95 inline-block"
+          <button 
+            onClick={() => setIsQuoteOpen(true)}
+            className="bg-red-700 hover:bg-red-800 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:opacity-95 inline-block w-full md:w-auto"
           >
             Book your install
-          </Link>
+          </button>
         </div>
 
         {/* Logo Section */}
@@ -538,6 +542,19 @@ const Amplink = () => {
         </section>
 
       </div>
+
+      {/* Request Quote Modal */}
+      {isQuoteOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+          <div className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-white rounded-2xl shadow-2xl">
+            <RequestQuote 
+              isModal={true} 
+              onClose={() => setIsQuoteOpen(false)} 
+              initialService="EV Charger"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

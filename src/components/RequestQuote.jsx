@@ -238,6 +238,7 @@ export default function RequestQuote({
                   <option value="Clocks">Clocks</option>
                   <option value="Network Service">Network Service</option>
                   <option value="Smart Home System">Smart Home System</option>
+                  <option value="EV Charger">EV Charger</option>
                 </select>
                 <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                   <svg

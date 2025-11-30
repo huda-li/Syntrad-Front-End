@@ -377,6 +377,7 @@ export default function Contact() {
                       <option value="Clocks" className="bg-black text-white">Clocks</option>
                       <option value="Network Service" className="bg-black text-white">Network Service</option>
                       <option value="Smart Home System" className="bg-black text-white">Smart Home System</option>
+                      <option value="EV Charger" className="bg-black text-white">EV Charger</option>
                     </select>
                     <ChevronDown className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
                   </div>
